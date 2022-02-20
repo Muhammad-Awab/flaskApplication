@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style1.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/phone.css') }}">
+   <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .awab{
+    display: flex;
+    flex-direction: column;
+    padding-top: 124px;
+}
+.awab{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -122px 30vh;
+}
+.awab .form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+/* body{
+    background-color: blueviolet;
+} */
+#address{
+    padding-left: 103px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo"><img src="awab.jpg" alt="" height="60px"></div>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Home">
+        <h1>Registeration</h1>
+    <form action="/add_user" class="form" method="post">
+    <div class="awab">
+        <div class="form">
+            <label for="Name">Name:</label>
+            <input type="name" name="uname" placeholder="Enter your name">
+        </div>
+      <div class="form">
+          <label for="email">Email</label>
+          <input type="email" name="uemail" id="" placeholder="awab@gmail.com">
+      </div> 
+      <div class="form">
+          <label for="password">Password</label>
+          <input type="password" name="upassword" id="" placeholder="">
+      </div>
+        <div class="form">
+            <table>
+        <tr>
+           <td> <input type="submit"  value="login" >
+            <input type="reset" ></td>
+        </tr>   
+        </div>
+    </table>
+    </div>
+</form>
+</section>
+</body>
+</html>

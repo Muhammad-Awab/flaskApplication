@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+  /* header */
+header{
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    
+}
+nav{
+    display: flex;
+   position: relative;
+   top: 0px;
+   left: 0px;
+}
+#navbar::before{
+content:" ";
+background-color: rgba(27, 27, 26, 0.89);
+
+position: absolute;
+top: 0px;left: 0px;
+height: 100%;
+width: 100%;
+z-index:-1;
+opacity: 0.7;
+}
+ul{
+    /* display: flex/; */
+    /* justify-content: center; */
+    margin-top: 20px;
+    
+}
+
+li{
+display: inline;
+margin: 50px 20px;
+padding: 20px 20px;
+
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+   
+}
+
+#logo img{
+    border-radius: 42px;
+    margin-top: 5px;
+}
+/*************** Main ******************/
+
+/* ***************Home********************* */
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding:75px 40px;
+
+}
+#Home p{
+ text-align: center;
+ font-size: 1.5rem;
+ color: white;
+}
+.heading1{
+ text-align: center;
+ font-size: 4rem;
+ color: white;
+}
+.btn{
+    background-color: rgb(126, 120, 120);
+    color: white;
+    cursor: pointer;
+    height: 47px;
+width: 126px;
+font-size: 22px;
+border-radius: 24px;
+}
+#Home::before{
+    content: "";
+    position: absolute;
+    background-image: url('/static/picture/food1.jpg');
+    height: 562px;
+    /* top: -72px; */
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+/* ******************Services********************************** */
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center .headingmid{
+text-align: center;
+    margin-top: 149px;
+    font-size: 3rem;
+}
+
+.heading2{
+    padding-top: 74px;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+#Services{
+    display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 15px auto;
+}
+
+.box{
+    background-color: #f2f2f2;
+    /* height: 544px;
+    width: 362px; */
+    margin: 2px 55px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    border: 3px solid #5c2aa5;
+    padding: 34px;
+
+}
+.box img{
+    height: 160px;
+    /* margin: auto;
+    display: block; */
+    /* margin: 20px 63px;
+    border-radius: 49px; */
+    margin: auto;
+    display: block;
+}
+/* .box p{
+    align-items: center;
+    padding-left: 37px;
+} */
+/* *******************************Our Clients */
+#OurClients{
+    height: 344px;
+    /* width: 455px; */
+  
+   
+}
+#OurClients::before{
+    content: " ";
+    position: absolute;
+    background-image: url('/static/picture/food4.jpg');
+
+    height: 390px;
+    width: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+#OurClients h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.client-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items img{
+    height: 233px;
+    width: 233px;
+    padding: 5px 67px;
+}
+/* *************************Contactus********************** */
+#Contactus{
+    height: 500px;
+    margin-top: 46px;
+}
+#Contactus::before{
+    content: "";
+    position: absolute;
+    background-image: url('/static/picture/food3.jpg');
+    height: 499px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#Contactus h1{
+    text-align: center;
+ font-size: 3rem;
+}
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    
+    background-color: black;
+    color: white;
+height: 9vh;
+display: flex;
+justify-content: center;
+}

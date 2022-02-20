@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style1.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/phone.css') }}">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #reset{
+        padding: 3px 30px;
+  margin: 2px 94px;
+      } 
+      #submit{
+        margin: 0px 95px;
+      }
+     #email{
+         margin: 0px 11px;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo"><img src="awab.jpg" alt="" height="60px"></div>
+            <ul>
+                <li><a href="/logout">LogOut</a></li>
+                <li><a href="/register">register</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section id="Home">
+
+        <h1 class="heading1">Login</h1>
+        <form action="/login_validation" class="form" method="post">
+ <table>
+            <tr>
+  <td> <label for="Email id:">Email id:</label>
+    <input type="text" placeholder="Username" name="email" ></td>
+</tr>
+<tr>
+  <td> <label for="password :">Password:</label>
+  <input type="password" name="password"  placeholder="Password">  </td>  </tr>
+
+<tr><td> <input type="submit" onclick=(call())  value="login" id="submit"></td></tr>
+<tr><td> <input type="reset" id="reset"></td></tr>
+</table>
+
+</form>
+{% if error %}
+<p class="error"><strong>Error:</strong> {{ error }}
+{% endif %}
+    </section>
+    <script>
+
+        function call()
+        {
+        
+        window.alert("Congragulations! You Login  Sucessfully ");
+        
+        }
+        
+        </script>
+      
+</body>
+</html>

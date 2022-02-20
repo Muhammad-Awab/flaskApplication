@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+
+
+    
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/phone.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style1.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Lobster&family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delievery Website</title>
+   
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo"> <img src="{{url_for('static',filename = 'picture/awab.jpg')}}"alt="doctor data " height="60px"></img></div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#OurClients">Our Clients</a></li>
+                <li><a href="#Contactus">Contact us</a></li>
+                <li><a href="/">Login</a></li>
+                <li><a href="/logout">Logut</a></li>
+                <li><a href="/register">Registeration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Home">
+
+            <h1 class="heading1">Welcome to MyOnlineMeal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            <button class="btn">Order Now</button>
+
+        </section>
+        <section class="center">
+            <h1 class="headingmid">Pizza Services</h1>
+            
+    <img src="{{url_for('static',filename = 'picture/pizzalogo.jpg')}}"alt="doctor data "></img>
+        </section>
+        <section class="services-container">
+            <h1 class="heading2">Our Services</h1>
+            <div id="Services">
+
+                <div class="box">
+                    <img src="{{url_for('static',filename = 'picture/food2.jpg')}}"alt="doctor data "></img>
+                    <h2 class="h-secondary center">Food Catering</h2>
+                    <p class="center1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit
+                        error
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
+                        recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                        sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste
+                        sunt
+                        voluptas beatae facilis labore, omnis sint quae eum.</p>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static',filename = 'picture/1.png')}}"alt="doctor data "></img>
+                    <h2 class="h-secondary center">Pizza Ordering</h2>
+                    <p class="center1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit
+                        error
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
+                        minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                        sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste
+                        sunt
+                        voluptas beatae facilis labore, omnis sint quae eum.</p>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static',filename = 'picture/3.png')}}"alt="doctor data "></img>
+
+                    <h2 class="h-secondary center">Food Ordering</h2>
+                    <p class="center1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit
+                        error
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab
+                        dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                        sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste
+                        sunt
+                        voluptas beatae facilis labore, omnis sint quae eum.</p>
+                </div>
+            </div>
+        </section>
+        <section id="OurClients">
+<h1>Our Clients</h1>
+<div class="client-item">
+    <div class="items">  <img src="{{url_for('static',filename = 'picture/logo1.png')}}"alt="doctor data "></img></div>
+    <div class="items">  <img src="{{url_for('static',filename = 'picture/logo2.png')}}"alt="doctor data "></img></div>
+    <div class="items">  <img src="{{url_for('static',filename = 'picture/logo3.png')}}"alt="doctor data "></img></div>
+    <div class="items">  <img src="{{url_for('static',filename = 'picture/logo4.png')}}"alt="doctor data "></img></div>
+</div>
+        </section>
+        <section id="Contactus">
+            <h1 class="heading4">Contactus</h1>
+            <div class="table">
+                <form action="">
+                    <div class="formgroup">
+                        <label for="name">Name:</label>
+                        <input type="name" name="" id="" placeholder="Enter your name">
+                    </div>
+                    <div class="formgroup">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="formgroup">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="phone" name="" id="" placeholder="Enter your phone number">
+                    </div>
+                    <div class="formgroup">
+                        <label for="Message">Message</label>
+                     <textarea name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy;www.myOnlineMeal.com.All rights reserved!</p>
+        </div>
+    </footer>
+</body>
+
+</html>
